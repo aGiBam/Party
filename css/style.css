@@ -1,0 +1,353 @@
+/* Start Global Rules  */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333;
+}
+/* End Global Rules  */
+
+/* Start Side Navbar */
+.sideNav {
+  position: fixed;
+  left: 0;
+  background-color: #000;
+  color: #333;
+  height: 100vh;
+  width: 250px;
+  padding: 100px 20px 0 20px;
+  transition: 0.3s;
+}
+
+.sideNav .info div {
+  margin-bottom: 15px;
+  font-size: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.sideNav .info div:hover {
+  background-color: #dddddd7d;
+}
+
+.sideNav .info div i {
+  width: 30px;
+  text-align: center;
+}
+
+.sideNav .info a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+  width: 100%;
+}
+
+.sideNav .info div:hover span a {
+  color: #fff !important;
+}
+
+.sideNav .openIcon {
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  width: 50px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 50%; */
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.sideNav .openIcon:hover {
+  background-color: #333;
+}
+/* End Side Navbar */
+
+/* Start Header  */
+.head {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/pexels-felix-mittermeier-956999.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.head .content h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.head .content P {
+  font-size: 20px;
+}
+/* End Header  */
+
+/* Start Accordion  */
+
+.accordion .box h3 {
+  cursor: pointer;
+}
+
+.accordion .box .content {
+  display: none;
+  background-color: #eee;
+  padding: 30px;
+}
+/* End Accordion  */
+
+/* Start Join Us Counter */
+.counter {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/invitation-2508607__340.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.counter .content > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 5px;
+  width: 250px;
+  flex-grow: 1;
+}
+
+/* End Join Us Counter */
+
+/* Start Contact  */
+.contact h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: #333;
+}
+.contact .content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+.contact .content .box {
+  width: 48%;
+}
+
+@media (max-width: 992px) {
+  .contact .content .box {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.contact .content .box h5 {
+  font-weight: bold;
+}
+.contact .content .box p {
+  font-size: 17px;
+}
+.contact .content .box .info {
+  margin: 20px 0;
+}
+
+.contact .content .box .info div {
+  margin-bottom: 15px;
+}
+
+.contact .content .box .info div span:first-child {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #555;
+  transition: 0.5s;
+}
+
+.contact .content .box .info div span:first-child:hover {
+  color: #000;
+}
+
+.contact .content .box .info div span:last-child {
+  font-size: 18px;
+}
+
+.contact .content .box .social-icons {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.contact .content .box .social-icons i {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  transition: 0.5s;
+}
+
+.contact .content .box .social-icons i:hover {
+  color: #000;
+}
+.contact .content .box form input {
+  margin-bottom: 15px;
+}
+.contact .content .box form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact .content .box p.countDown {
+  margin-top: 15px;
+}
+.contact .content .box p.countDown span {
+  color: #333;
+  font-weight: 500;
+}
+
+/* End Contact  */
+
+/* Spinner  */
+.loading {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sk-cube-grid {
+  width: 80px;
+  height: 80px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+/* Spinner  */
